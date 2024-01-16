@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles_lg.css">
+    <link rel="stylesheet" href="/css/styles-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bits & Sound</title>
+</head>
+
+<body>
+    <header>
+        <%- include('header') %>
+    </header>
+
+    <main class="main-body">
+        <section class="albums-main-container">
+            <article class="album">
+                <div class="album-cover">
+                    <a href="/pistas"><img class="album-imagen" src="/images/home_imgs/tracks_img.jpg" alt="">
+                    <div class="overlay">
+                        <p class="image-txt">MÚSICA</p>
+                        <br>
+                        <p class="image-txt">EN EL</p>
+                        <br>
+                        <p class="image-txt">AIRE</p>
+                    </div>
+                </a>
+                </div>
+            </article>
+            <article class="album">
+                <div class="album-cover">
+                    <a href="/albums"><img class="album-imagen" src="/images/home_imgs/m_prod_img.jpg" alt="">
+                    <div class="overlay">
+                        <p class="image-txt">MÚSICA</p>
+                        <br>
+                        <p class="image-txt">EN TUS</p>
+                        <br>
+                        <p class="image-txt">MANOS</p>
+                    </div>
+                </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <%- include('footer') %>
+    </footer>
+
+</body>
+
+</html>

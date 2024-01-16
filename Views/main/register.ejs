@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles-home.css">
+    <link rel="stylesheet" href="/css/styles-root.css">
+    <link rel="stylesheet" href="/css/styles_lg.css">
+    <link rel="stylesheet" href="/css/styles-login-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Registro</title>
+</head>
+
+
+<body>
+    <header>
+        <%- include('header') %>
+    </header>
+
+    <main class="register-main">
+        <div class="reg-frame">
+            <div class="reg-frame-frame">
+                <form action="/" class="reg-form">
+                    <div class="reg-form-field">
+                        <label class="title-register">Nombre y apellido</label>
+                        <input class="subcontrol-register-form" type="text" name="name-lastname" placeholder="Nombre y Apellido"
+                            required>
+                    </div>
+                    <div class="reg-form-field">
+                        <label class="title-register">Nombre de usuari@</label>
+                        <input class="subcontrol-register-form" type="text" name="user-name" placeholder="Nombre de Usuario"
+                            required>
+                    </div>
+                    <div class="reg-form-field">
+                        <label class="title-register">E-mail</label>
+                        <input class="subcontrol-register-form" type="email" name="email" placeholder="direccion@email.com"
+                            required>
+                    </div>
+                    <div class="reg-form-field">
+                        <label class="title-register">Fecha de nacimiento</label>
+                        <input class="subcontrol-register-form" type="date" name="birth" required>
+                    </div>
+                    <div class="reg-profile-form-field">
+                        <label class="title-register">Perfil de usuari@</label>
+                        <div class="user-category">
+                            <label><input class="subcontrol-register-form" type="radio" name="profile">Comprador</label>
+                            <label><input class="subcontrol-register-form" type="radio" name="profile">Vendedor</label>
+                            <label><input class="subcontrol-register-form" type="radio" name="profile">Ambos</label>
+                        </div>
+                    </div>
+                    <div class="reg-categories-form-field">
+                        <label class="title-register">Categorías de interés</label>
+                        <div class="checkbox-category">
+
+                            <label><input class="subcontrol-register-form check" type="checkbox"
+                                    name="user-interest">Electro</label>
+                            <label><input class="subcontrol-register-form check" type="checkbox"
+                                    name="user-interest">jazz</label>
+                            <label><input class="subcontrol-register-form check" type="checkbox"
+                                    name="user-interest">trap</label>
+                            <label><input class="subcontrol-register-form check" type="checkbox"
+                                    name="user-interest">blues</label>
+                            <label><input class="subcontrol-register-form check" type="checkbox"
+                                    name="user-interest">salsa</label>
+                        </div>
+                    </div>
+                    <div class="reg-form-field">
+                        <label class="title-register">Contraseña</label>
+                        <input class="subcontrol-register-form" type="password" name="password">
+                        <br>
+                        <label class="title-register">Confirmar contraseña</label>
+                        <input class="subcontrol-register-form" type="password" name="confirm-password">
+                    </div>
+                    <div class="button-send-reset-register">
+                        <input class="reg-reset-button" type="reset" value="Borrar">
+                        <input class="reg-submit-button" type="submit" value="Enviar" action="/home.html">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <%- include('footer') %>
+    </footer>
+</body>
+
+</html>
